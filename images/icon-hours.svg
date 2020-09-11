@@ -1,0 +1,26 @@
+<svg id="kb-chose__icon-second" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.74 60">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: #cfe8ff
+            }
+
+            .cls-1,
+            .cls-2 {
+                stroke: #54a0ff;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 3px
+            }
+
+            .cls-2 {
+                fill: none
+            }
+        </style>
+    </defs>
+    <circle class="cls-1" cx="27.32" cy="34.65" r="23.85" />
+    <polyline class="cls-2" points="27.32 19.53 27.32 36.43 36.33 36.43" />
+    <polyline class="cls-2" points="3.96 17.76 1.5 15.31 6.54 10.26 8.93 12.65" />
+    <polyline class="cls-2" points="50.78 17.76 53.24 15.31 48.2 10.26 45.81 12.65" />
+    <path class="cls-2" d="M31.82,6a4.51,4.51,0,0,0-9,0" />
+</svg>

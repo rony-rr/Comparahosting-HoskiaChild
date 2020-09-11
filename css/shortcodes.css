@@ -1,0 +1,157 @@
+/*
+ Theme Name:   Hoskia Child
+ Theme URI:    http://themelooks.net/demo/hoskia/
+ Description:  This is a child theme for hoskia WordPress Theme
+ Author:       ThemeLooks
+ Author URI:   http://themelooks.com/
+ Template:     hoskia
+ Version:      1.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         two-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, theme-options, editor-style, featured-images, microformats, post-formats,  sticky-post, threaded-comments, translation-ready
+ Text Domain:  hoskia-child
+*/
+
+
+/*  [ Add your custom css below ]
+- - - - - - - - - - - - - - - - - - - - */
+
+.content-internal-row {
+    height: 86px;
+}
+
+.class-cup-icon-host {
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    height: 100%;
+    vertical-align: middle;
+    display: flex;
+}
+
+
+
+
+
+/* Sección de Top 5 de Sidebar Blog */
+.top5_sidebar{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.top5_sidebar h4.h4_title{
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 27px;
+    color: #303d48;
+    font-size: 17px;
+}
+
+.top5_sidebar .host_item{
+    width: 100%;
+    height: 55px;
+    border-bottom: solid 1px #ddd;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #FFF;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.top5_sidebar .host_item{
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+
+.top5_sidebar .host_item img{
+    width: 40%;
+    margin-left: 13px;
+}
+
+.top5_sidebar .host_item > span{
+    width: 30%;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.top5_sidebar .host_item span i{
+    font-size: 10.5px !important;
+}
+
+.top5_sidebar .host_item div.price_item{
+    display: block;
+    width: 25%;
+}
+
+.top5_sidebar .host_item div.price_item .text_item{
+    color: #3f5efb;
+    font-weight: 700;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.top5_sidebar .host_item img.img_color{
+    display: flex;
+}
+
+.top5_sidebar .host_item img.img_white{
+    display: none;
+}
+
+.top5_sidebar .host_item:hover{
+    background-color: #3f5efb;
+    border-left: solid 2px #fc466b;
+}
+
+.top5_sidebar .host_item:hover img.img_color{
+    display: none;
+}
+
+.top5_sidebar .host_item:hover img.img_white{
+    display: flex;
+}
+
+.top5_sidebar .host_item:hover div.price_item .text_item{
+    color: #FFF;
+}
+
+.top5_sidebar .host_item.first_item{
+    background-color: #3f5efb !important;
+    border-left: solid 2px #fc466b !important;
+}
+
+.top5_sidebar .host_item.first_item img.img_color{
+    display: none !important;
+}
+
+.top5_sidebar .host_item.first_item img.img_white{
+    display: flex !important;
+}
+
+.top5_sidebar .host_item.first_item div.price_item .text_item{
+    color: #FFF !important;
+}
+
+
+body.post-template-default.single.single-post aside.page--sidebar.col-md-3 div.page--sidebar-widget .search--widget form input{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+body.post-template-default.single.single-post aside.page--sidebar.col-md-3 div.page--sidebar-widget .search--widget form span button{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+body.post-template-default.single.single-post aside.page--sidebar.col-md-3 .recent-posts--widget ul .h4_title{
+    font-weight: bold !important;
+    font-size: 17px;
+    color: #303d48;
+}
+

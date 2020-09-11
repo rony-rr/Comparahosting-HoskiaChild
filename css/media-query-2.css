@@ -1,0 +1,144 @@
+/*
+
+
+
+ Theme Name:   Hoskia Child
+
+
+
+ Theme URI:    http://themelooks.net/demo/hoskia/
+
+
+
+ Description:  This is a child theme for hoskia WordPress Theme
+
+
+
+ Author:       ThemeLooks
+
+
+
+ Author URI:   http://themelooks.com/
+
+
+
+ Template:     hoskia
+
+
+
+ Version:      1.0
+
+
+
+ License:      GNU General Public License v2 or later
+
+
+
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+
+
+
+ Tags:         two-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, theme-options, editor-style, featured-images, microformats, post-formats,  sticky-post, threaded-comments, translation-ready
+
+
+
+ Text Domain:  hoskia-child
+
+
+
+*/
+
+
+
+
+
+
+
+@media(max-width: 325px){
+	.post--content p{
+		text-align: justify !important;
+		line-height: normal !important;
+	}
+}
+
+@media (max-width: 820px){
+	.body.post-template-default.single.single-post .post--details{
+    width: 100% !important;
+    margin: 5px auto !important;
+}
+
+}
+
+
+@media (max-width: 375px) {
+	.post--content p{
+		text-align: justify !important;
+		line-height: normal !important;
+	}
+}
+
+
+
+@media (min-width: 300px) and (max-width: 500px){
+	.post--content p{
+		text-align: justify !important;
+		line-height: normal !important;
+	}
+}
+
+
+
+@media (min-width: 376px) and (max-width: 475px) {
+	.post--content p{
+		text-align: justify !important;
+		line-height: normal !important;
+	}
+}
+
+
+
+@media (min-width: 476px) and (max-width: 480px){
+	.post--content p{
+		text-align: justify !important;
+		line-height: normal !important;
+	}
+}
+
+
+
+@media (min-width: 476px) and (max-width: 700px) {
+	.post--content p{
+		text-align: justify !important;
+		line-height: normal !important;
+	}
+}
+
+
+
+@media (min-width: 526px) and (max-width: 700px) {
+	.post--content p{
+		text-align: justify !important;
+		line-height: normal !important;
+	}
+}
+
+
+
+@media (min-width: 701px) and (max-width: 991px) {
+	.post--content p{
+		text-align: justify !important;
+		line-height: normal !important;
+	}
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1100px) {
+	.post--content p{
+		text-align: justify !important;
+		line-height: normal !important; 
+	}
+}
+
+
+

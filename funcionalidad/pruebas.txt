@@ -1,0 +1,98 @@
+﻿//Script que uso para ajustar un sticky
+jQuery(window).scroll(function(){
+      if (jQuery(this).scrollTop() > 380) {
+          jQuery('.sticky-image-comparacard').addClass('sticky-image-comparacard-fixed');
+      } else {
+          jQuery('.sticky-image-comparacard').removeClass('sticky-image-comparacard-fixed');
+      }
+  });
+
+
+
+
+
+<?php
+// HTML Template Code
+const cardCuponesHTML = '
+<div class="pricing--item active col-xs-12 col-md-4 col-sm-12">
+<div class="pricing--content ">
+<div class="pricing--header">
+<h3 class="h4">{{hosting_type}}</h3>
+<img src="{{logo_url}}" alt="4 hostinger">
+<h4 class="h5">
+<strike>{{previous_price}}</strike>
+<strong>{{actual_price}} {{is_monthly}}</strong>
+</h4>
+</div>
+<div class="pricing--icon">
+<i></i>
+</div>
+<div class="pricing--features">
+<ul>
+{{features}}
+</ul>
+</div> 
+<div class="pricing--separator"></div> 
+<div class="pricing--footer">
+<span class="pricing--ribbon">Cup&oacute;n descuento</span>
+<div class="pricing--footer-panel1">
+<div class="pricing--footer-panel2">
+<h1>{{percent}}% off</h1>
+<hr></hr>
+<a href="#" class="btn btn-primary">Generar Codigo</a>
+<label>Valido hasta 23 de marzo de 2002</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+';
+
+function cards_cupones ($cupon_id) { 
+// copy HTML Template content
+$cardCuponesHTMLCopy = constant("cardCuponesHTML");
+
+// Example Dummy Data
+$data = [
+'hosting_type' => 'Shared Hosting',
+'logo_url' => 'https://comparahosting.x-dev.net/wp-content/uploads/2020/01/4-hostinger.png',
+'previous_price' => '$17.99',
+'actual_price' => '$15.99',
+'is_monthly' => 'true',
+'features' => [
+'Installation Charge',
+'2 GB DDR3 RAM',
+'20GB SSD Cloud Storage',
+'Weekly Backups'
+],
+'percent' => '50',
+'cupon' => 'SNAPPY50',
+'token_redirect_url' => 'https://www.google.com' // URL de monetizacion del proveedor
+];
+
+// Reformat is_monthly field
+$data['is_monthly'] = ($data['is_monthly'] == 'true')? '<small>/m</small>': '';
+
+// Reformat features field
+$tmp_features = "";
+foreach($data['features'] as $feature) {
+$tmp_features .='
+<li>
+<i style="color:;" class="fa fm fa fa-check"></i>
+'.$feature.'
+</li>
+';
+}
+$data['features'] = $tmp_features;
+
+// Replace data array keys and values into cardCuponesHTML
+foreach($data as $datakey => $datavalue) {
+$cardCuponesHTMLCopy = str_replace("{{".$datakey."}}", $datavalue, $cardCuponesHTMLCopy);
+}
+// return replaced HTML string
+return $cardCuponesHTMLCopy;
+}
+
+// Add Shortcode to Wordpress
+add_shortcode("cards_cupones", "cards_cupones");
+

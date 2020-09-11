@@ -1,0 +1,28 @@
+<svg id="kb-chose__icon-third" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63.51 60">
+<defs>
+<style>
+.cls-1 {
+fill: #cfe8ff
+}
+
+.cls-1,
+.cls-2 {
+stroke: #54a0ff;
+stroke-linecap: round;
+stroke-linejoin: round;
+stroke-width: 3px
+}
+
+.cls-2 {
+fill: none
+}
+</style>
+</defs>
+<circle class="cls-1" cx="30.76" cy="22.43" r="20.34" />
+<circle class="cls-2" cx="30.76" cy="22.43" r="20.93" />
+<line class="cls-2" x1="45.56" y1="37.23" x2="62.01" y2="53.69" />
+<polyline class="cls-2" points="38.76 35.87 38.76 29.2 23.99 14.42" />
+<polyline class="cls-2" points="5.71 13.62 1.5 13.62 1.5 58.5 38.76 58.5 38.76 47.18" />
+<line class="cls-2" x1="38.76" y1="29.77" x2="23.73" y2="29.77" />
+<polyline class="cls-2" points="38.76 29.77 23.73 29.77 23.73 14.24 18.06 14.24" />
+</svg>

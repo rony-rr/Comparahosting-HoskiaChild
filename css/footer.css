@@ -1,0 +1,185 @@
+/*
+
+ Theme Name:   Hoskia Child
+
+ Theme URI:    http://themelooks.net/demo/hoskia/
+
+ Description:  This is a child theme for hoskia WordPress Theme
+
+ Author:       ThemeLooks
+
+ Author URI:   http://themelooks.com/
+
+ Template:     hoskia
+
+ Version:      1.0
+
+ License:      GNU General Public License v2 or later
+
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+
+ Tags:         two-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, theme-options, editor-style, featured-images, microformats, post-formats,  sticky-post, threaded-comments, translation-ready
+
+ Text Domain:  hoskia-child
+
+*/
+
+
+
+
+
+/*  [ Add your custom css below ]
+
+- - - - - - - - - - - - - - - - - - - - */
+
+
+
+.footer--widget {
+
+    /*height: 208px !important;*/
+
+    /*margin-left: 78px !important;*/
+
+}
+
+
+
+.footer--widget .container {
+
+    font-family: Montserrat !important;
+
+}
+
+
+
+.footer-about {
+
+    width: 100% !important;
+
+    /*border-left: 3px solid white !important;*/
+
+}
+
+
+
+h4.footer--title {
+
+   /* display: none !important; */
+
+}
+
+
+
+.social--widget {
+
+    margin-left: 91px !important;
+
+}
+
+
+
+.social--widget__sub-title {
+
+    display: none !important;
+
+}
+
+
+
+.footer--widget .social--widget .nav {
+
+    color: inherit;
+
+    margin-left: -11px;
+
+    margin-right: -11px;
+
+    border-left: 1px solid white !important;
+
+    /* height: 143px !important; */
+
+}
+
+
+
+.menu-sin-nombre-container {
+
+    color: white;
+
+    border-left: 1px solid white !important;
+
+    /* height: 143px !important; */
+
+}
+
+
+
+.menu-footer-right-container {
+
+    color: white;
+
+    border-left: 1px solid white !important;
+
+    /* height: 143px !important; */
+
+}
+
+
+@media(min-width: 992px){
+	.footer--widget .social--widget .nav {
+		height: 143px !important;
+	}
+	.menu-sin-nombre-container {
+    	height: 143px !important;
+	}
+	.menu-footer-right-container {
+    	height: 143px !important;
+	}
+}
+
+
+.footer--widget .menu a:before {
+
+    content: "" !important;
+
+}
+
+
+
+
+
+/*ocultando el copyright*/
+
+
+
+.footer--copyright {
+
+    display: none
+
+}
+
+
+
+
+
+/*footer opciones*/
+
+
+
+.menu-footer-right-container {
+
+    color: white;
+
+}
+
+
+
+.menu-sin-nombre-container {
+
+    color: white;
+
+}
+
+.contact-info--item{
+    cursor: pointer !important;;
+}

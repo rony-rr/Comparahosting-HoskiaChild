@@ -1,0 +1,24 @@
+<svg id="kb-chose__icon-fourth" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.78 60">
+                        <defs>
+                            <style>
+                                .xcls-3 {
+                                    stroke: #54a0ff;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-width: 3px
+                                }
+
+                                .xcls-2 {
+                                    fill: #54a0ff
+                                }
+
+                                .xcls-3 {
+                                    fill: none
+                                }
+                            </style>
+                        </defs>
+                        <path d="M66.35 16.73A15.16 15.16 0 1037.42 23c.55 1.21-2.65 9.56-2.65 9.56s6.55-4.3 7.62-3.54a15.14 15.14 0 0024-12.33z" stroke="#54a0ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" fill="#cfe8ff" />
+                        <path class="xcls-2" d="M45.92 15.05a1.72 1.72 0 100 3.43 1.72 1.72 0 000-3.43zM51.54 15.05a1.72 1.72 0 000 3.43 1.72 1.72 0 100-3.43zM57.16 15.05a1.72 1.72 0 000 3.43 1.72 1.72 0 100-3.43z" />
+                        <path class="xcls-3" d="M26.8 25v7.57a8 8 0 01-8 8h-1.39a8 8 0 01-8-8V25" />
+                        <path class="xcls-3" d="M9.43 28c-3.31 0-3.31-5.72-3.31-5.72a11.05 11.05 0 0111-11h1.95a11.05 11.05 0 0111 11S30.63 28 26.8 28M9.43 24.2a9.78 9.78 0 009.71-1.2M26.8 25s-4.68 1.19-7.66-2M15.41 40.52v5.07M20.82 40.84v5.31M1.43 58.57v-6.65a5.32 5.32 0 011.91-4L10.45 44s6.92 5.68 15.29-.15L32.85 48a5.31 5.31 0 011.92 4v6.66" />
+                    </svg>

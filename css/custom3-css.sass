@@ -1,0 +1,476 @@
+
+$redColor : #FC466B
+$pinkColor: #FFECF0
+$blueColor: #3F5EFB
+$inactiveBlueColor: #657efc
+$inactiveRibbonBlueColor: #98b4e5
+$cuponInnerPanel2HoverColor: #d6dffa
+
+/*
+    -------------------------- [1] - [Slider Filter Page Grid Style] --------------------------
+
+$styleAttribute : ["flex-direction: column-reverse; display: flex;", "display: flex; flex-direction: column-reverse;"]
+
+%ulTabListsContent
+    display: grid
+    grid-template:
+        columns: 20% 20% 20% 20% 20%
+        rows: auto auto
+
+%liTabListContent
+    margin:
+        left: 5%
+        right: 5%
+    padding:
+        left: 5%
+        right: 5%
+
+@mixin tabListPosition($col, $row)
+    grid-column:
+        start:  $col
+        end: $col + 1
+    grid-row:
+        start: $row
+        end: $row + 1
+
+@mixin sortLiGrid
+    $tmp_row: 1
+    @for $i from 1 through 10
+        @if $i % 2 == 0
+            $tmp_row: 2
+        @else
+            $tmp_row: 1
+        &:nth-child(#{$i})
+            @include tabListPosition(ceil($i / 2), $tmp_row)
+
+.page--container[style="#{nth($styleAttribute, 1)}"],
+.page--container[style="#{nth($styleAttribute, 2)}"]
+    .page--sidebar
+        margin-top: 50px
+        ul.tab-lists            
+            @extend %ulTabListsContent
+                    
+            li.tab-list
+                @extend %liTabListContent
+                @include sortLiGrid
+
+/*
+    -------------------------- [2] [Flechas Comparativa Tabla] --------------------------
+
+.section--compare
+    margin:
+        left: 40px
+        right: 40px
+    .owl-nav
+        display: inherit !important
+        top: 46%
+        @media (max-width: 991px)
+            left: -25%
+            width: 124.7%
+        @media (min-width: 992px)
+            left: -12.3%
+            width: 112.1%
+        color: white
+        font:
+            weight: bold
+            size: 25px
+
+        .owl-prev
+            float: left
+            margin-left: -41px
+            background-color: $redColor
+            border:
+                top-left-radius: 100%
+                bottom-left-radius: 100%
+            padding:
+                top: 11px
+                left: 17px
+                right: 15px
+                bottom: 11px
+
+            i::before
+                content: "\f104"
+
+        .owl-next
+            float: right
+            margin-right: -41px
+            background-color: $redColor
+            border-top-right-radius: 100%
+            border-bottom-right-radius: 100%
+            padding:
+                top: 11px
+                left: 15px
+                right: 17px
+                bottom: 11px
+
+
+            i::before
+                content: "\f105"
+
+/*
+    -------------------------- [3] [Cambios Miriam 11.02.2020] --------------------------
+
+// 1) Hacer + Bold Tipografia de texto de puntuacion
+.media_score
+    font-weight: bold
+
+// 2) Boton redondo que tenga 12px de espacio arriba
+// - Solucionado en archivo custom2-css.css en clase ".options-items-map.selected" cambiando su height
+
+// 3) Editar Height de linea separadora en cards de filtros
+.row.resultados div    
+    height: 78%
+
+// 4) El color de minitablita en la 1ra y 3ra fila cambiar de color
+.table-plans-provider
+    tr
+        &:nth-child(1), &:nth-child(3)
+            background-color: #DCE4FF            
+        &:nth-child(2)
+            background-color: #fff !important
+        td
+            border:
+                top: none !important
+                bottom: none !important
+            
+            
+// 5) Revisar que este centrada la info en todas las cards
+// - Si estan centradas
+
+// 6) Darle + padding lateral a columna donde esta el logo en opcion "detalles"
+.row.resultados.detail-card
+    padding-bottom: 3px
+    .first-col
+        padding:
+            left: 26px
+            right: 26px
+        
+        img
+            margin:
+                top: 29px
+                bottom: 10px
+    .second-col
+        padding-left: 11px
+        margin-right: -19px
+        
+        .caracteristicas_general
+            padding:
+                left: 15px
+                right: 15px
+        .caracteristicas_especificas
+            padding:
+                left: 20px
+                right: 0px
+                    
+
+// 7)  Separar el "Desde" de la mini tablita darle mas margin-top
+.grid_end_box 
+    margin-top: 18px
+
+// 8) Alinear cheques de caracteristicas especificas de los iconos de arriba
+.caracteristicas_especificas
+    margin-left: -49px
+
+// 9) Tamaño de los iconos cards filtros detalles    
+.caracteristicas_general
+    p
+        img
+            width: 18px
+            margin-top: -3px 
+
+
+
+.row.resultados
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1) !important
+    p
+        img
+            width: 15px
+
+.section--compare
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1) !important
+
+// 10) Agregar Cruz a boton de hosting paises via CSS
+%crossCommonRules
+    position: absolute !important
+    content: "" !important
+    border-radius: 5px !important
+    background-color: $redColor !important
+    z-index: 99 !important
+
+.option_ver_mas_button 
+    position: relative !important
+
+    &::before        
+        @extend %crossCommonRules
+        left: 50% !important
+        margin-left: -3% !important
+        top: auto !important
+        width: 4% !important
+        height: 60% !important
+
+        -webkit-transform: rotate(-35deg)
+        transform: none !important
+        -webkit-transition: none !important
+        transition: none !important
+        opacity: 1 !important
+    
+    &::after
+        @extend %crossCommonRules
+        top: 50% !important
+        margin-top: -4% !important
+        width: 60% !important
+        height: 4% !important
+    
+// Cambios Miriam 17-Feb-2020
+
+// 11) Radio Buttons de filtros estan ovalados
+.categoria-tit-list
+    h5
+        color: #303D48
+    li
+        margin-bottom: 10px
+
+        i.fa-circle
+            border:
+                bottom:
+                    left-radius: 50%
+                    right-radius: 50%
+                top:
+                    left-radius: 50%
+                    right-radius: 50%
+            padding: 0
+            width: 16px
+            height: 16px
+            position: relative
+            
+            &::before
+                position: absolute
+                top: -1px
+        a
+            vertical-align: text-bottom
+
+// 12) Linea separadore debe ser gris¡
+.tab-list.accordion-tab
+    border-bottom: solid 2px #E3E3E3
+    h5
+        color: #313E49 !important
+
+// 13) Hacer mas pequeño height cards lista de filtro
+.row.resultados.list-card
+    height: 160px
+    .five-col-list
+        border-right: none !important
+    .second-col-list
+        margin-top: -10px !important
+
+        .media_score
+            margin-top: 6px
+
+        .stars_media
+            padding-bottom: 4px
+    .third-col-list
+        margin-top: -4px
+
+// 14) Hacer boton de card lista igual al de detalles
+.five-col-list
+    .btn.view-off
+        max-width: 118.19px
+        margin: 0 auto
+    
+// 15) Bajar las caracteristicas de los cards de paises
+.options-items-map.selected
+    .content-cardviews-home.info-cardviews-content
+        .class-dato
+            &:nth-child(4)
+                margin-top: 12px !important
+.end-bottom-button-ver-mas-cardviews
+    a  
+        margin-top: 0px !important
+
+// 16) Arreglar doble linea en "Encuentra el Hosting ideal"
+#servicesTab 
+    .services-tab--nav
+        li
+            a
+                &::before
+                    bottom: -2px
+
+// 17) Cambiar color del header y ponerle una imagen
+.globpageheader.bg--overlay    
+    overflow: hidden
+    background-color: $blueColor !important
+    background-size: cover !important
+    background-attachment: inherit !important
+
+    @media (max-width: 991px)
+        background-image: none !important
+    @media (min-width: 992px) and (max-width: 1200px)
+        background-position: 41% 100% !important
+
+    .container
+        @media (min-width: 992px) and (max-width: 1200px)
+            margin-left: 37%
+        @media (min-width: 1200px)
+            margin-left: 42%
+    
+    &::before
+        opacity: 0 !important
+
+// 18) cambiar tamaño imagen logo de tabla comparacion
+.section--compare
+    .features-rows-compare     
+        @media (min-width: 992px)
+            width: 11%
+        .second-row
+            max-height: 90px
+    .owl-carousel
+        @media (min-width: 992px)
+            width: 89%
+        .owl-stage
+            .owl-item
+                .compare-card
+                    .card-col
+                        .first-row
+                            padding:
+                                left: 30px !important
+                                right: 30px !important
+                        .second-row
+                            max-height: 90px
+                            .media_score
+                                margin-bottom: -10px
+
+// 19) Area de codigo de cupones
+.pricing--item
+    &.mensual-cards, &.anual-cards
+        .cupon_button_area
+            display: inherit
+        .cupon_reveal_area            
+            display: none
+
+            p:nth-child(1)
+                margin-top: -10px
+                margin-bottom: 0px
+                color: $blueColor
+            
+            input
+                background-color: $pinkColor
+                border: none
+                text-align: center
+                color: $redColor
+                font-family: 'Poppins', serif
+                font-weight: 700
+                font-size: 25px
+                width: 70%
+            
+            p:nth-child(4)
+                font-weight: bold
+                margin-top: 5px
+
+
+
+
+
+
+/*
+    -------------------------- [4] [Estilo para Cards de Cupones] --------------------------
+
+.pricing--item
+    cursor: pointer
+    .pricing--content
+        .pricing--header
+            height: 160px !important
+
+            img
+                width: 182px
+                margin-top: 10.5px 
+            .h5
+                position: absolute
+                top: 120px
+                left: 0px
+                width: 100%
+                padding-top: 4px
+                text-align: center
+                font-weight: 400
+                line-height: 22px                
+
+                strong 
+                    font-size: 27px !important
+
+        .pricing--icon
+            &::after
+                border: 0.5px solid white
+                height: 0px
+                top: -14px!important
+                left: 4px !important
+                border-radius: 0%
+            i
+                width: 170px
+                height: 170px
+                position: absolute
+                margin:
+                    left: -86px
+                    top: -63px                
+                z-index: -1
+
+        .pricing--features
+            margin-top: 120px !important
+
+        .pricing--separator
+            background: #F4F4F4
+            border-top: 1px solid #ccc
+            height: 10px
+
+        .pricing--footer
+            overflow: hidden
+            position: relative
+            height: 196px
+
+            .pricing--ribbon
+                font-weight: 500
+                display: inline !important
+                top: 31px
+                background-color: $inactiveRibbonBlueColor
+                color: white
+
+            .pricing--footer-panel1
+                width: 96%
+                height: 180px
+                margin: 8px auto
+                border: 2px dashed $inactiveBlueColor
+                border-radius: 5px                
+
+                .pricing--footer-panel2
+                    width: 95%
+                    height: 159px
+                    margin: 8px auto
+                    padding: 10px 0px
+                    border-radius: 5px
+                
+                    h1
+                        margin-top: 0px
+                        color: $blueColor
+                    hr
+                        background-color: $redColor
+                        width: 100%
+                        max-width: 70px
+                        height: 3px
+                        margin:
+                            top: -5px
+                            bottom: 15px
+                    label
+                        margin-top: 10px
+                        color: $blueColor !important
+                        font-weight: 500
+
+    // .pricing--item:hover
+    &:hover
+        .pricing--content
+            .pricing--footer
+                .pricing--ribbon
+                    background-color: $blueColor
+
+                .pricing--footer-panel1
+                    border: 2px dashed $blueColor
+
+                    .pricing--footer-panel2
+                        background-color: $cuponInnerPanel2HoverColor

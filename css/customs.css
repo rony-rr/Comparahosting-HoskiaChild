@@ -1,0 +1,298 @@
+/*
+ Theme Name:   Hoskia Child
+ Theme URI:    http://themelooks.net/demo/hoskia/
+ Description:  This is a child theme for hoskia WordPress Theme
+ Author:       ThemeLooks
+ Author URI:   http://themelooks.com/
+ Template:     hoskia
+ Version:      1.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         two-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, theme-options, editor-style, featured-images, microformats, post-formats,  sticky-post, threaded-comments, translation-ready
+ Text Domain:  hoskia-child
+*/
+
+
+/*  [ Add your custom css below ]
+- - - - - - - - - - - - - - - - - - - - */
+
+#servicesTab .container .section--title {
+    background-color: blue;
+    width: 1517px;
+    height: 245px;
+    margin-left: -203px
+}
+
+#servicesTab .container .section--title h2 {
+    color: white;
+    position: relative;
+    padding-top: 78px;
+}
+
+#servicesTab .container .section--title h2::before {
+    background-color: white;
+}
+
+.Testimonials .vc_column_inner .wpb_wrapper .hoskia--section .container .vc_row .wpb_column .vc_column-inner .wpb_wrapper .section--title .text-left h2 {
+    color: blue;
+}
+
+.client-area li>a::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    border: 7px solid #fff;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: white !important;
+}
+
+
+/*.pricing--items .row{
+    display: flex !important;
+    justify-content: center !important;
+    align-content: center !important;
+    align-items: center !important;
+    margin-right: -171px !important;
+    margin-left: -228px !important;
+}*/
+
+.about--widget p {
+    width: 90% !important;
+}
+
+.icon {
+    text-align: right !important;
+}
+
+.banner--slider {
+    position: inherit;
+    height: 100vh;
+}
+
+.services-tab--nav ul li.active a,
+.services-tab--nav ul li a {
+    width: auto !important;
+}
+
+.custom-class-seccion-encuentra-hosting-ideal div.vc_column-inner div.wpb_wrapper div.hoskia--section #servicesTab .container .section--title {
+    width: 100%;
+    /*margin: auto !important;*/
+}
+
+.ch-title {
+    margin-bottom: 0px !important;
+    text-align: center !important;
+    font-weight: 600 !important;
+    color: #3f5efb !important;
+    font-size: 3.5rem !important;
+    line-height: 48px !important;
+    font-size: 48px !important;
+}
+
+.ch-subtitle {
+    margin-bottom: 0px !important;
+    text-align: center !important;
+    font-weight: 400 !important;
+    color: #3f5efb !important;
+    line-height: 3rem !important;
+    font-size: 1.8rem !important;
+}
+
+.ch-subtitle__line {
+    border: solid 1.5px #fc466b !important;
+    width: 70px !important;
+    margin-top: 21px !important;
+}
+
+.ch-card-info {
+    background: #f7f7f7 !important;
+}
+
+.ch-card-info>h4 {
+    color: #3f5efb !important;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
+.ch-card__line {
+    display: none !important;
+    margin-left: 30px !important;
+    width: 30% !important;
+    border: 1.5px solid #000 !important;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.ch-card-describe {
+    display: block !important;
+    color: #7c7c7c !important;
+    margin-bottom: 20px;
+    line-height: 2rem !important;
+    text-align: justify;
+}
+
+.mt-4 {
+    margin-top: 20px;
+}
+
+.px-4 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.py-4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ch-card-title {
+    line-height: 20px !important;
+}
+
+.ch-card-info>img {
+    margin-bottom: 20px;
+}
+
+#ch-post__block {
+    margin-top: 30px;
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+.ch-categories-item {
+    display: inline;
+    font-size: 1.8rem;
+}
+
+.ch-categories-item>a {
+    display: inline;
+    color: #7c7c7c;
+    padding: 10px 15px;
+}
+
+.ch-categories-item>a:hover {
+    cursor: pointer;
+}
+
+ul li.ch-categories-item:before {
+    content: "";
+}
+
+.ch-categories-item>a.active {
+    color: #3f5efb;
+    font-weight: 500;
+    border-bottom: #3f5efb solid 2px;
+}
+
+.ch-categories-item>a.unactive {
+    border-bottom: none;
+}
+
+ul.ch-categories {
+    padding-left: 0px !important;
+}
+
+.services-tab--nav>ul.nav>li>a {
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+.services-tab--nav>ul.nav>li.active>a {
+    border-radius: 5px;
+}
+
+.services-tab--nav>ul.nav>li.active>a {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-property: color, background-color, border-color, box-shadow;
+    transition-property: color, background-color, border-color, box-shadow;
+}
+
+.services-tab--nav {
+    padding-top: 60px;
+    min-height: 235px !important;
+}
+
+
+/*
+#hoskia-section5deab1aed7ddc-5362{
+   height: 1500px !important;
+}*/
+
+.contact-info--icon {
+    background: #ffffff !important;
+    border: 8px solid #fc466b !important;
+    width: 90px;
+    height: 90px;
+    margin: 0px !important;
+}
+
+.contact-info--icon:before {
+    margin: 0px !important;
+}
+
+.contact-info--content>h2 {
+    font-weight: bold !important;
+}
+
+.contact-info--content>h2,
+.contact-info--content>p {
+    display: block !important;
+    text-align: left !important;
+    margin-left: 30px !important;
+}
+
+.cart-button {
+    display: none !important;
+}
+
+
+/*Estilos periodicos*/
+
+.imgpe1{
+    position: absolute !important;
+    margin-top: -65px !important;
+    margin-left: 539px !important;
+    width: 150px !important;
+    height: 54px !important;
+}
+
+
+.imgpe2{
+    height: 43px !important;
+    width: 140px !important;
+    position: absolute !important;
+    margin-top: -60px !important;
+    margin-left: 711px !important;
+}
+
+.imgpe3{
+    height: 41px !important;
+    width: 150px !important;
+    position: absolute !important;
+    margin-top: -59px !important;
+    margin-left: 868px !important;
+}
+
+.imgpe4{
+    height: 45px !important;
+    width: 168px !important;
+    position: absolute !important;
+    margin-top: -61px !important;
+    margin-left: 1007px !important;
+}
+
+/*Estilos Seccion de FAQ*/
+
+.features-grid--item-wrap>div:hover{
+    background-color: #fc466b;
+    color: #FFFFFF !important;
+}
+
+.features-grid--item>a:hover {
+    color: white !important;
+}
