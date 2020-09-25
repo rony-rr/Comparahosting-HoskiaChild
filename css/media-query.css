@@ -4063,3 +4063,59 @@
         }
     }
 }
+
+
+@media( max-width: 767px ){
+
+    body.proveedor-template-default.single.single-proveedor #pageContent .banner_header_single_proveedor .nubes_banner{
+        flex-direction: column;
+    }
+    body.proveedor-template-default.single.single-proveedor #pageContent .banner_header_single_proveedor .nubes_banner .header_box1{
+        width: 100%;
+        height: auto;
+        padding: 100px 25px 25px;
+        align-items: center;
+    }
+    body.proveedor-template-default.single.single-proveedor #pageContent .banner_header_single_proveedor .nubes_banner .header_box2{
+        width: 100%;
+        padding: 25px 25px;
+    }
+    body.proveedor-template-default.single.single-proveedor #pageContent .banner_header_single_proveedor .nubes_banner .header_box2 .item-column-element{
+        width: 60%;
+        margin: 25px auto !important;
+    }
+    body.proveedor-template-default.single.single-proveedor div.container div.row.page--container div.section1 > .container_img_title{
+        float: none;
+        margin: 0 auto 25px;
+        padding: 0;
+        width: 95%;
+        text-align: center;
+    }
+    .banner_header_single_proveedor .header_box1 span{
+        width: auto;
+    }
+    body.proveedor-template-default.single.single-proveedor div.container div.row.page--container div.section1 > .container_img_title h3{
+        margin-bottom: 35px;
+    }
+    body.proveedor-template-default.single.single-proveedor div.container div.row.page--container div.section1 > .container_img_title img{
+        margin-bottom: 15px;
+        border-radius: 7px;
+    }
+    body.proveedor-template-default.single.single-proveedor div.section2 .caracteristicas_exclusivas{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    body.proveedor-template-default.single.single-proveedor div.section4{
+        padding: 0 25px 30px;
+    }
+    body.proveedor-template-default.single.single-proveedor div.section3 .mobile_container{
+        width: 1200px;
+    }
+    body.proveedor-template-default.single.single-proveedor div.section3 div.planes_pricing_post{
+        padding: 30px 25px 0 0;
+    }
+    body.proveedor-template-default.single.single-proveedor div.container div.row.page--container div.section1{
+        padding: 110px 25px;
+    }
+}

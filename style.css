@@ -2757,7 +2757,7 @@ body.blog .post--items div.col-sm-4 div.post--item .post--title{
 
   
 
-/open PullQuote/
+/*open PullQuote*/
 
 .su-pullquote {
   font-weight: bold !important;
@@ -2807,7 +2807,7 @@ body.blog .post--items div.col-sm-4 div.post--item .post--title{
 }
 
 
-/end PullQuote/
+/*end PullQuote*/
 
 div.post--content ul:not(.toc_list) {
     margin: 20px 0 30px;
@@ -2935,6 +2935,7 @@ body.proveedor-template-default.single.single-proveedor div#pageHeader{
 
 div#pageContent.primary_content_single_proveedor{
     padding-top: 0 !important;
+    overflow: hidden;
 }
 
 .banner_header_single_proveedor{

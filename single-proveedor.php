@@ -589,6 +589,12 @@
             <h1>Planes y precios</h1>
             <hr />
 
+        <?php
+            if( wp_is_mobile() ){
+                echo '<div style="overflow-x: scroll; width: 100%; position: relative; padding: 0 25px;">
+                        <div class="mobile_container">';
+            }
+        ?>
             <div class="planes_pricing_post">
                 <div class="planes_features_container">
                     <div class="_1">
@@ -604,6 +610,11 @@
                     <?php echo $render_plans; ?>
                 </div>
             </div>
+        <?php
+            if( wp_is_mobile() ){
+                echo '</div></div>';
+            }
+        ?>
             
         </div>
 

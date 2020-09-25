@@ -854,6 +854,7 @@ ul.procon__list {
   background-image: url('../images/icon-dot.svg');
   background-size: 9px;
   padding: 0 32px;
+  list-style: none !important;
 }
 .procon__list-item:last-of-type {
   margin-bottom: 0;

@@ -1761,6 +1761,27 @@ jQuery(document).ready(function() {
         
     }
 
+
+    function readjust_banner_proveedor_page(){
+
+        //reacomodando altura de container de banner en single proveedores
+        var altura_container_banner = jQuery(window).height() - 88;
+        jQuery('body.proveedor-template-default.single.single-proveedor #pageContent .banner_header_single_proveedor').css({ 
+                                                            "height" : altura_container_banner, 
+                                                            "max-height" : altura_container_banner, 
+                                                            "min-height" : altura_container_banner 
+                                                        });
+    
+    }
+
+    if ( jQuery(window).width() < 768 ) {
+
+        readjust_banner_proveedor_page();
+    
+    }
+
+
+
 });
 
 
